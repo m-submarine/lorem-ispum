@@ -21,7 +21,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('host')->defaultValue('localhost')->isRequired()
+                ->scalarNode('host')->defaultValue('localhost')
                 ->end()
             ->end()
         ;
