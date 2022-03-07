@@ -16,7 +16,7 @@ class LelandLoremIpsumExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter("leland_lorem_ipsum.unicorn", $config["unicorn"] ?? true);
+        $container->setParameter("leland_loremipsum.host", $config["host"] ?? 'localhost');
 
 
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../config'));
