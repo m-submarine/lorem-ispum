@@ -1,0 +1,19 @@
+{
+    "name": "mykees/lorem-ipsum-bundle",
+    "description": "test external bundle",
+    "autoload": {
+        "psr-4": {
+            "Mykees\\LoremIpsumBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mykees",
+            "email": "mykeespro@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+        
+    }
+}
