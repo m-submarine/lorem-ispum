@@ -1,15 +1,15 @@
 {
-    "name": "mykees/lorem-ipsum-bundle",
+    "name": "leland/lorem-ipsum-bundle",
     "description": "test external bundle",
     "autoload": {
         "psr-4": {
-            "Mykees\\LoremIpsumBundle\\": "src/"
+            "Leland\\LoremIpsumBundle\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "mykees",
-            "email": "mykeespro@gmail.com"
+            "name": "leland",
+            "email": "leland.beaumond@gmail.com"
         }
     ],
     "require": {

@@ -1,5 +1,5 @@
 <?php
-namespace Mykees\LoremIpsumBundle\DependencyInjection;
+namespace Leland\LoremIpsumBundle\DependencyInjection;
 
 
 use Symfony\Component\Config\Definition\Processor;
@@ -8,7 +8,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class MykeesLoremIpsumExtension extends Extension
+class LelandLoremIpsumExtension extends Extension
 {
 
     public function load(array $configs, ContainerBuilder $container)
@@ -16,7 +16,7 @@ class MykeesLoremIpsumExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter("mykees_lorem_ipsum.unicorn", $config["unicorn"] ?? true);
+        $container->setParameter("leland_lorem_ipsum.unicorn", $config["unicorn"] ?? true);
 
 
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../config'));

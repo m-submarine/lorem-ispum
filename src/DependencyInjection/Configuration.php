@@ -1,6 +1,6 @@
 <?php
 
-namespace Mykees\LoremIpsumBundle\DependencyInjection;
+namespace Leland\LoremIpsumBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\BooleanNodeDefinition;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -12,12 +12,12 @@ class Configuration implements ConfigurationInterface
     
     public function getConfigTreeBuilder () {
 
-        $treeBuilder = new TreeBuilder('mykees_lorem_ipsum');
+        $treeBuilder = new TreeBuilder('leland_lorem_ipsum');
         if (method_exists($treeBuilder, 'getRootNode')) {
             $rootNode = $treeBuilder->getRootNode();
         } else {
             // BC for symfony/config < 4.2
-            $rootNode = $treeBuilder->root('mykees_lorem_ipsum');
+            $rootNode = $treeBuilder->root('leland_lorem_ipsum');
         }
 
         $rootNode
