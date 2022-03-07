@@ -1,17 +1,23 @@
 {
     "name": "leland/lorem-ipsum-bundle",
+    "type": "symfony-bundle",
     "description": "test external bundle",
     "autoload": {
         "psr-4": {
             "Leland\\LoremIpsumBundle\\": "src/"
         }
     },
+    "homepage": "https://github.com/m-submarine/lorem-ispum",
     "authors": [
         {
             "name": "leland",
             "email": "leland.beaumond@gmail.com"
         }
     ],
+    "config": {
+        "bin-dir": "bin",
+        "sort-packages": true
+    },
     "require": {
         "php": "^7.3 || ^8.0",
         "symfony/config": "^4.4 || ^5.0",
